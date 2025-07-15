@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+/*
+variables
+*/
+
+:root {
+    --backgroundcolor: #F1F1F1;
+    --graylight: #b3b3b3;
+}
