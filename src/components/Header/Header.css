@@ -1,1 +1,40 @@
-/* Estilos adicionales para Header si los necesitas */
+.graylight-fill {
+  fill: rgba(255, 255, 255, 0.5);
+}
+
+.graylight-fill:hover {
+  fill: rgba(255, 255, 255, 1);
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 474px;
+  height: 48px;  
+}
+
+.input-wrapper input {
+  flex: 1;
+  padding-left: 2.5rem; /* Deja espacio para el SVG izquierdo */
+  padding-right: 2.5rem; /* Deja espacio para el SVG derecho */  
+}
+
+.input-wrapper svg:first-child {
+  position: absolute;
+  left: 0.7rem;
+  width: 1.5rem;
+  height: 1.5rem;  
+}
+
+.input-wrapper svg:last-child {
+  position: absolute;
+  right: 0.7rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  padding-inline: 12px 4px;
+  flex-shrink: 0; /* Evita que el SVG se achique */
+  box-sizing: content-box; /* El padding no reduce el tamaño del SVG */
+}

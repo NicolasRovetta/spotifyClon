@@ -8,3 +8,77 @@ variables
     --backgroundcolor: #F1F1F1;
     --graylight: #b3b3b3;
 }
+
+/* Sidebar Library Button (custom, non-conflicting) */
+.sidebar-library-btn {
+  background: none;
+  border: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
+  padding: 4px 0;
+  transition: color 0.2s;
+  width: 100%;
+}
+.sidebar-library-btn:hover,
+.sidebar-library-btn:focus {
+  color: var(--graylight);
+}
+
+.sidebar-add-btn {
+  background: none;
+  border: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 16px auto 0 auto;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background 0.2s, color 0.2s;
+  width: 40px;
+  height: 40px;
+  background: rgba(255,255,255,0.1);
+}
+.sidebar-add-btn:hover,
+.sidebar-add-btn:focus {
+  background: rgba(255,255,255,0.1);
+  color: var(--graylight);
+}
+.sidebar-add-btn svg {
+  fill: rgba(255, 255, 255, 0.5);
+  width: 16px;
+  height: 16px;   
+}
+.sidebar-library-btn .svg-default {
+  display: inline-block;
+}
+.sidebar-library-btn .svg-hover {
+  display: none;
+}
+.sidebar-library-btn:hover .svg-default,
+.sidebar-library-btn:focus .svg-default {
+  display: none;
+}
+.sidebar-library-btn:hover .svg-hover,
+.sidebar-library-btn:focus .svg-hover {
+  display: inline-block;
+}
+.sidebar-library-btn svg {
+  vertical-align: middle;
+  fill: currentColor;
+}
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
