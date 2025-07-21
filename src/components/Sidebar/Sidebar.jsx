@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
-    <aside className="h-full bg-black text-white flex flex-col p-4 mr-8" style={{ width: '72px' }}>
+    <aside className="h-full text-white flex flex-col p-3 m-2 rounded-lg mt-[-1px]" style={{ width: '72px', height: '543.2px',backgroundColor: 'rgba(255,255,255,0.1)' }}>
       <nav className="flex flex-col gap-4">
         
         <button
@@ -34,7 +34,7 @@ const Sidebar = () => {
         <button
           type="button"
           aria-label="Crear"
-          className="sidebar-add-btn"
+          className="sidebar-add-btn cursor-pointer"
         >
           <svg data-encore-id="icon" role="img" aria-hidden="true"  viewBox="0 0 16 16">
             <path d="M15.25 8a.75.75 0 0 1-.75.75H8.75v5.75a.75.75 0 0 1-1.5 0V8.75H1.5a.75.75 0 0 1 0-1.5h5.75V1.5a.75.75 0 0 1 1.5 0v5.75h5.75a.75.75 0 0 1 .75.75"></path>
